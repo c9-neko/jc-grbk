@@ -10,7 +10,7 @@ body {
 /* 导航栏 */
 .navbar {
   margin-bottom: 30px;
-  background-color: #4caf50; /* 主色 */
+  background-color: #4caf50 !important; /* 主色 */
 }
 
 .navbar-brand,
