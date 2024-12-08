@@ -1,0 +1,248 @@
+/* 全局设置 */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 导航栏 */
+.navbar {
+  margin-bottom: 30px;
+  background-color: #4caf50 !important; /* 主色 */
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa !important;
+}
+
+/* 主要内容区域 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 文章列表 */
+.list-group-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 文章标题 */
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* 侧边栏 */
+.card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-body a {
+  text-decoration: none;
+  color: #4caf50;
+}
+
+/* 页脚 */
+footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-8,
+  .col-md-4 {
+    max-width: 100%;
+  }
+}
+
+/* 弹性盒子布局 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.col-md-8 {
+  flex: 2;
+  min-width: 600px; /* 保证内容区域不太小 */
+}
+
+.col-md-4 {
+  flex: 1;
+  min-width: 300px; /* 保证侧边栏不太小 */
+}
+
+/* 文章列表 */
+.list-group-item {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #f4f4f4;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  color: #333;
+}
+
+/* 边框与阴影效果 */
+.card,
+.list-group-item {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body a:hover {
+  color: #333;
+}
+
+/* 为按钮和链接添加效果 */
+.btn {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* 自定义分页按钮 */
+.pagination .page-link {
+  color: #333;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}
+
+.pagination .page-link:hover {
+  background-color: #f4f4f4;
+  border-color: #ddd;
+}
+
+/* 在移动设备上增加样式调整 */
+@media (max-width: 768px) {
+  /* 导航栏字体大小 */
+  .navbar {
+    font-size: 0.9rem;
+  }
+
+  /* 主要内容区域 padding */
+  .container {
+    padding: 10px;
+  }
+
+  /* 文章列表项字体 */
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+
+  /* 侧边栏内边距 */
+  .card-body {
+    padding: 1rem;
+  }
+
+  /* 文章和侧边栏列的响应式布局 */
+  .row {
+    flex-direction: column;
+  }
+
+  /* 使列的宽度适应小屏幕 */
+  .col-md-8,
+  .col-md-4 {
+    max-width: 100%;
+  }
+}
+
+/* 弹性布局设置 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.col-md-8 {
+  flex: 2;
+  min-width: 600px; /* 保证内容区域不太小 */
+}
+
+.col-md-4 {
+  flex: 1;
+  min-width: 300px; /* 保证侧边栏不太小 */
+}
